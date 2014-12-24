@@ -23,12 +23,12 @@ package com.gzbaba.script
 class AGroovyClass {
 
     def userClosure(closure) {
-        println "";
+        println "userClosure call!";
         closure();
     }
 
     def passToUserClosure(int value, closure) {
-        println "";
+        println "passToUserClosure call";
         closure(value);
     }
 }
