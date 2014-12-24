@@ -22,12 +22,23 @@ package com.gzbaba.script
  */
 class AGroovyClass {
 
-    def userClosure(closure) {
+    public def getString() {
+        sayHello();
+        def str = "回来吧, 11111111111111111";
+        str.concat("我是个中国人, 来吧,相约在北京!");
+    }
+
+    private def sayHello() {
+        println "sayHello, dong wang!"
+    }
+
+    public def userClosure(closure) {
         println "userClosure call!";
+        println getString();
         closure();
     }
 
-    def passToUserClosure(int value, closure) {
+    public def passToUserClosure(int value, closure) {
         println "passToUserClosure call";
         closure(value);
     }

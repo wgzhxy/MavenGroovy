@@ -27,6 +27,16 @@ import com.gzbaba.script.AGroovyClass;
 public class UserArgroovyClass {
     
    private static Logger LOGGER = LogManager.getLogger(UserArgroovyClass.class);
+   
+   public static void test() {
+       AGroovyClass instance = new AGroovyClass();
+       Object result = instance.userClosure(new Object() {
+           public String call() {
+               return "You call groovy!";
+           }
+       });
+       LOGGER.info(result);
+   }
 
     public static void main(String args[]) {
         AGroovyClass instance = new AGroovyClass();
