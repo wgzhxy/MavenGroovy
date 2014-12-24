@@ -24,8 +24,8 @@ class AGroovyClass {
 
     public def getString() {
         sayHello();
-        def str = "回来吧, 11111111111111111";
-        str.concat("我是个中国人, 来吧,相约在北京!");
+        def str = "回来吧, ";
+        str.concat("我是个中国人,来吧,相约在北京!");
     }
 
     private def sayHello() {
