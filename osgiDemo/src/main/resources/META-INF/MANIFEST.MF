@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1419573241274
+Build-Jdk: 1.7.0_67
+Built-By: guangzhong.wgz
+Bundle-ManifestVersion: 2
+Bundle-Name: osgiDemo Maven Webapp
+Bundle-SymbolicName: osgiDemo
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *; scope=compile | runtime; inline=false
+Embed-Directory: target/dependency
+Embed-StripGroup: true
+Export-Package: version=0.0.1-SNAPSHOT;version="0.0.1.SNAPSHOT"
+Originally-Created-By: Apache Maven Bundle Plugin
+Tool: Bnd-2.3.0.201405100607
